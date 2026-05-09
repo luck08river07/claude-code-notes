@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Claude Codeをこれから学ぶ方向けに、概要と特徴、はじめ方をまとめた入門記事です。">
+  <title>Claude Codeとは？ ― 学習をはじめる前に知っておきたいこと | Claude Code 学習ノート</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title"><a href="../index.html">Claude Code 学習ノート</a></h1>
+      <nav class="site-nav">
+        <a href="../index.html">記事一覧</a>
+        <a href="../about.html">このサイトについて</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h1>Claude Codeとは？ ― 学習をはじめる前に知っておきたいこと</h1>
+
+      <div class="article-meta">
+        <span>2026-05-09</span> ・
+        <span class="article-tags">
+          <span class="tag">入門</span>
+          <span class="tag">Claude Code</span>
+        </span>
+      </div>
+
+      <p>このブログ最初の記事として、まずは「Claude Codeとは何か」を自分の言葉でまとめておきたいと思います。これから学習を進めるうえで、自分の理解の出発点を残しておくのが目的です。</p>
+
+      <h2>Claude Codeのざっくりした説明</h2>
+      <p>Claude Codeは、Anthropic社が提供する<strong>ターミナル（コマンドライン）から動くAIコーディングアシスタント</strong>です。</p>
+      <p>普段使っているターミナルから <code>claude</code> コマンドを起動して、自然言語でやりたいことを伝えると、ファイルを読んだり、コードを書いたり、テストを実行したりしてくれる、というイメージです。</p>
+
+      <blockquote>
+        <p>たとえば「このファイルのバグを直して」「READMEを書いて」と頼むと、必要なファイルを読み込み、編集し、結果を見せてくれる。</p>
+      </blockquote>
+
+      <h2>何ができるのか（学習開始時点での理解）</h2>
+      <ul>
+        <li>プロジェクトのファイルを読んで内容を理解する</li>
+        <li>コードを生成・修正する</li>
+        <li>シェルコマンドの実行（テスト、ビルド、git操作など）</li>
+        <li>大きな変更をタスクに分解して進める</li>
+        <li>過去のやり取りを踏まえて、対話しながら作業する</li>
+      </ul>
+      <p>つまり「コードを書く相棒」というより、「<strong>手元のPCで一緒に作業してくれるエンジニア</strong>」に近い感覚で使うツールのようです。</p>
+
+      <h2>他のAIコーディングツールとの違い</h2>
+      <p>これまで触ったことのあるAIコーディング関連のツールと比較して、自分が感じている違いを表にしました。あくまで学習開始時点の理解で、間違っているかもしれません。</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ツール</th>
+            <th>主な使い方</th>
+            <th>特徴</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ChatGPT等のチャット</td>
+            <td>ブラウザで対話</td>
+            <td>コードを貼り付けて相談する形が中心</td>
+          </tr>
+          <tr>
+            <td>GitHub Copilot</td>
+            <td>エディタ内で補完</td>
+            <td>書いている途中にサジェスト</td>
+          </tr>
+          <tr>
+            <td>Claude Code</td>
+            <td>ターミナルから起動</td>
+            <td>ファイル操作・コマンド実行まで任せられる</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>はじめ方（これから試す手順）</h2>
+      <p>公式ドキュメントによると、おおまかな導入手順は次のような感じです。これから自分でも実際に試してみる予定です。</p>
+
+      <ol>
+        <li>Node.js をインストール</li>
+        <li>npm で Claude Code をインストール
+          <pre><code>npm install -g @anthropic-ai/claude-code</code></pre>
+        </li>
+        <li>プロジェクトのフォルダに移動して <code>claude</code> を実行</li>
+        <li>初回はログイン（Anthropicアカウント）</li>
+      </ol>
+
+      <p>※ コマンドや手順は変わる可能性があるので、公式ドキュメントも合わせて確認してください。</p>
+
+      <h2>これから学んでいきたいこと</h2>
+      <ul>
+        <li>基本コマンド・スラッシュコマンドの使い分け</li>
+        <li>プロジェクトに <code>CLAUDE.md</code> を置いて文脈を共有する方法</li>
+        <li>サブエージェントやスキル機能の活用</li>
+        <li>実際のアプリ開発で使うときのコツ</li>
+      </ul>
+
+      <h2>まとめ</h2>
+      <p>Claude Codeは、ターミナルから動かすAIコーディングアシスタントで、ファイル編集やコマンド実行まで任せられる「一緒に作業してくれるエンジニア」のようなツールです。</p>
+      <p>これから実際に手を動かしながら、つまずいたポイントや便利だった使い方を、このブログで少しずつ記録していきます。</p>
+
+      <hr>
+
+      <p>次の記事では、実際にClaude Codeをインストールして、最初のコマンドを動かすところまでを書く予定です。</p>
+
+      <a href="../index.html" class="back-link">← 記事一覧に戻る</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Claude Code 学習ノート</p>
+  </footer>
+</body>
+</html>
