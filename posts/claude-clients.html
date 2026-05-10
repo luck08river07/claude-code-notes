@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Claudeにはデスクトップアプリ・スマホアプリ・Webブラウザ版・Claude Codeなど複数のクライアントがあります。それぞれの特徴と使い分けを学習者目線でまとめました。">
+  <title>Claudeはどこで使える？ ― Web・デスクトップ・スマホ・Claude Codeの違い | Claude Code 学習ノート</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title"><a href="../index.html">Claude Code 学習ノート</a></h1>
+      <nav class="site-nav">
+        <a href="../index.html">記事一覧</a>
+        <a href="../about.html">このサイトについて</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h1>Claudeはどこで使える？ ― Web・デスクトップ・スマホ・Claude Codeの違い</h1>
+
+      <div class="article-meta">
+        <span>2026-05-10</span> ・
+        <span class="article-tags">
+          <span class="tag">入門</span>
+          <span class="tag">Claude</span>
+          <span class="tag">クライアント比較</span>
+        </span>
+      </div>
+
+      <p>学習を進めるなかで、「Claudeって <code>claude</code> コマンドだけじゃないんだ」と気付きました。実はAnthropicは複数のクライアントを提供していて、用途によって向き不向きがあります。今回はその整理メモです。</p>
+
+      <h2>Claudeを使えるクライアントは大きく4つ</h2>
+      <p>調べてみると、自分が触れる範囲では次の4つがありました。</p>
+
+      <ol>
+        <li><strong>Webブラウザ版</strong>（claude.ai）</li>
+        <li><strong>デスクトップアプリ</strong>（Mac / Windows）</li>
+        <li><strong>スマホアプリ</strong>（iOS / Android）</li>
+        <li><strong>Claude Code</strong>（ターミナルから動くコーディング向けツール）</li>
+      </ol>
+
+      <p>「同じClaude」がどこからでも使える、というのが基本の考え方ですが、それぞれ得意なことが少しずつ違います。</p>
+
+      <h2>1. Webブラウザ版（claude.ai）</h2>
+      <p>もっとも手軽な入り口です。<a href="https://claude.ai/" target="_blank" rel="noopener">claude.ai</a> にアクセスしてログインすれば、すぐにチャットを始められます。</p>
+      <ul>
+        <li>インストール不要、URLを開くだけ</li>
+        <li>会話履歴が同じアカウントで共有される</li>
+        <li>ファイルや画像を添付して相談できる</li>
+        <li>Artifactsでコードや文書をその場で生成・プレビュー可能</li>
+      </ul>
+      <p>「とりあえず触ってみたい」「外出先のPCから使いたい」というときに便利でした。</p>
+
+      <h2>2. デスクトップアプリ（Mac / Windows）</h2>
+      <p>ブラウザを開かずに、PCのアプリとして起動できる版です。中身はWeb版と近いですが、常駐アプリとして使えるぶん使い勝手が変わります。</p>
+      <ul>
+        <li>ショートカットからすぐ呼び出せる</li>
+        <li>ウインドウとして独立しているので、調べ物中のブラウザと混ざらない</li>
+        <li>ファイル選択やフォルダとの連携がしやすい</li>
+      </ul>
+      <p>普段からPCで作業する人は、デスクトップ版を入れておくと「ちょっと聞きたい」のハードルが下がります。</p>
+
+      <h2>3. スマホアプリ（iOS / Android）</h2>
+      <p>iPhoneやAndroid向けのアプリも提供されています。</p>
+      <ul>
+        <li>移動中や思いついたタイミングですぐ使える</li>
+        <li>音声入力で話しかけるように相談できる</li>
+        <li>カメラで撮った写真をその場で共有できる</li>
+      </ul>
+      <p>個人的には「移動中にアイデアを壁打ちする」「読んでいる本の写真を撮って質問する」といった、PCを開くほどではない場面で重宝しそうです。</p>
+
+      <h2>4. Claude Code（ターミナル版）</h2>
+      <p>そしてこのブログの主役、Claude Codeです。<a href="claude-code-intro.html">前回の記事</a>でも触れましたが、立ち位置がほかとはかなり違います。</p>
+      <ul>
+        <li>ターミナルから <code>claude</code> コマンドで起動</li>
+        <li>ローカルのファイルを読み書きできる</li>
+        <li>シェルコマンドを実行してテストやビルドまで任せられる</li>
+        <li>プロジェクト単位の作業を一緒に進める「相棒」のような使い方</li>
+      </ul>
+      <p>Web/デスクトップ/スマホが「会話して相談する」場だとしたら、Claude Codeは「実際に手を動かして作業する」場、というのが今のところの理解です。</p>
+
+      <h2>違いをざっくり比較</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>クライアント</th>
+            <th>得意なこと</th>
+            <th>向いている場面</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Webブラウザ版</td>
+            <td>気軽に始められる・どこでも使える</td>
+            <td>初めての利用・出先のPC</td>
+          </tr>
+          <tr>
+            <td>デスクトップアプリ</td>
+            <td>すぐ呼び出せる・常駐できる</td>
+            <td>普段のPC作業中の相談</td>
+          </tr>
+          <tr>
+            <td>スマホアプリ</td>
+            <td>音声入力・カメラ連携</td>
+            <td>移動中・写真を見せて質問</td>
+          </tr>
+          <tr>
+            <td>Claude Code</td>
+            <td>ファイル操作・コマンド実行</td>
+            <td>コーディング・プロジェクト作業</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>同じアカウントで使い分ける</h2>
+      <p>これら4つは、同じAnthropicアカウントでログインして使えます。会話履歴も基本的にアカウントに紐づくので、</p>
+      <blockquote>
+        <p>スマホでアイデアをメモ → PCのデスクトップ版で続きを相談 → Claude Codeで実装</p>
+      </blockquote>
+      <p>のような流れも自然にできそうです。「どれか一つだけ」ではなく、用途で使い分けるのが正解みたいです。</p>
+
+      <h2>学習者としての使い分けメモ</h2>
+      <p>自分はこれからこんな使い方をしてみようと思っています。</p>
+      <ul>
+        <li><strong>Web/デスクトップ版</strong> ：学習中に分からない概念を整理してもらう、文章をまとめる</li>
+        <li><strong>スマホ版</strong> ：移動中に「気になった言葉」を音声で質問してメモ</li>
+        <li><strong>Claude Code</strong> ：実際にコードを書いたり、リポジトリを操作したりする</li>
+      </ul>
+
+      <h2>まとめ</h2>
+      <p>Claudeには <strong>Web・デスクトップ・スマホ・Claude Code</strong> の4つの入り口があり、どれも同じAnthropicアカウントで使えます。「相談する」場面と「作業する」場面で使い分けると、学習も実作業も効率が上がりそうです。</p>
+      <p>次の記事では、いよいよClaude Codeを実際にインストールして、最初のコマンドを動かすところまでを書く予定です。</p>
+
+      <hr>
+
+      <a href="../index.html" class="back-link">← 記事一覧に戻る</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Claude Code 学習ノート</p>
+  </footer>
+</body>
+</html>
